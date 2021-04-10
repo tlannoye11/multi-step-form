@@ -1,3 +1,6 @@
+This project was courtesy of the following article on FreeCodeCamp:
+https://www.freecodecamp.org/news/build-a-multi-step-registration-app-with-animated-transitions-using-mern-stack/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
