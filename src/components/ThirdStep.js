@@ -99,13 +99,17 @@ const ThirdStep = (props) => {
                 state:
                     states.find((state) => state.isoCode === selectedState)
                         ?.name || '',
-                city: setSelectedCity,
+                city: selectedCity,
             };
+
+            console.log('updatedData:', updatedData);
 
             await axios.post(`${BASE_API_URL}/register`, {
                 ...user,
                 ...updatedData,
             });
+
+            console.log('updatedData2:', updatedData);
 
             Swal.fire(
                 'Awesome!',
