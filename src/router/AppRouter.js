@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { First } from 'react-bootstrap/esm/PageItem';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import FirstStep from '../components/FirstStep';
 import Header from '../components/Header';
@@ -44,7 +43,14 @@ const AppRouter = () => {
                         path='/second'
                     />
                     <Route
-                        render={(props) => <ThirdStep {...props} user={user} />}
+                        render={(props) => (
+                            <ThirdStep
+                                {...props}
+                                user={user}
+                                updateUser={updateUser}
+                                resetUser={resetUser}
+                            />
+                        )}
                         path='/third'
                     />
                 </Switch>
